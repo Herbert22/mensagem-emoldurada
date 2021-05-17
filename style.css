@@ -1,0 +1,35 @@
+body {
+    margin: auto;
+    width: 400px;
+}
+
+.indicacoes {
+    font-family: 'AmaticBold';
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center; 
+}
+.texto-principal {
+    padding: 1rem;
+    width: 50%;
+    margin: 1rem auto;
+    position: relative;
+}
+.texto-principal::after,
+.texto-principal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 4em;
+    height: 100%;
+    border: .5em solid currentColor;
+    border-radius: .5em;
+}
+.texto-principal::after {
+    left: 0;
+    border-right: 0;
+}
+.texto-principal::before {
+    right: 0;
+    border-left: 0;
+}
